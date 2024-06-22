@@ -23,6 +23,9 @@ def authenticate():
             
             chrome_options = Options()
             chrome_options.add_argument("--headless")  # Run Chrome in headless mode
+            chrome_options.add_argument("--disable-gpu")  # Disable GPU acceleration
+            chrome_options.add_argument("--window-size=1920x1080")  # Set the window size
+            chrome_options.add_argument("--disable-blink-features=AutomationControlled")  # Avoid detection
 
             # Create Chrome driver with the specified options
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
