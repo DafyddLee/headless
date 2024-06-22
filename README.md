@@ -7,3 +7,5 @@ This webscrapper has attached the chrome driver for a windows system.
 
 The path of the chrome driver is not stated within the code
  - This may be needed!-
+
+- Content may need to be containerized in order to be on cloud run -
